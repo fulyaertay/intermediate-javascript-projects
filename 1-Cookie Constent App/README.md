@@ -1,6 +1,6 @@
 # Cookie Constent App
 
-### Features
+### What I Learned?
 ```
 -setTimeOut()
 -element.style
