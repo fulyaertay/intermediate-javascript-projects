@@ -1,4 +1,4 @@
-# coa234a208ee78a0460b52fb7
+# Cookie Constent App
 
 Quick start:
 
