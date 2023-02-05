@@ -1,6 +1,7 @@
 # Cookie Constent App
 
 ### Features
+```
 -setTimeOut()
 -element.style
 -formData& .get()
@@ -8,6 +9,7 @@
 -CSS:row-reverse
 -toggling classes
 -disabled attribute
+````
 
 Quick start:
 
