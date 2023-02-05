@@ -1,5 +1,14 @@
 # Cookie Constent App
 
+### Features
+-setTimeOut()
+-element.style
+-formData& .get()
+-event.preventDefault
+-CSS:row-reverse
+-toggling classes
+-disabled attribute
+
 Quick start:
 
 ```
