@@ -22,13 +22,13 @@
   ![image](./1-cookie-consent-app/cookie-consent.png)
   
   ### Description
-  ```bash
+
   - The project is designed to take personal informations as cookie consent.
 
-  ```
+ 
   ### What I Learned?
   
-  ```bash
+
   - setTimeOut()
   - element.style
   - forms
@@ -36,9 +36,9 @@
   - event.preventDefault
   - CSS: row-reverse
   - toggling classes
-  - dşsabled attributed
+  - disabled attribute
 
-  ```
+
 
 
   
