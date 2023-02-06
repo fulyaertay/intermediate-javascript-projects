@@ -33,10 +33,12 @@
   - element.style
   - forms
   - FormData & get()
-  - event.preventDefault
+  - event.preventDefault()
   - CSS: row-reverse
   - toggling classes
   - disabled attribute
+  - aria-label attribute
+  
 
 
 
