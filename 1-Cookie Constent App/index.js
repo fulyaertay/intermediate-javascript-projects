@@ -17,17 +17,36 @@ consentForm.addEventListener('submit', function(e){
     <div class="modal-inner-loading">
         <img src="images/loading.svg" class="loading">
         <p id="upload-text">Uploading your data to the dark web...</p>
-    </div>`
+    </div>` 
+    
     setTimeout(function(){
-        document.getElementById('upload-text').innerText = `Making the sale...`
-    }, 1500) 
+        document.getElementById('upload-text').innerText = `
+        Making the sale...`
+    }, 1500)
+    
+    setTimeout(function(){
+        document.getElementById('modal-inner').innerHTML = `
+        <h2>Thanks you sucker! </h2>
+        <p>We just sold the rights to your eternal soul.</p>
+        <div class="idiot-gif">
+            <img src="images/pirate.gif">
+        </div>
+    ` 
+    }, 3000)
   
 /*   
 Challenge: 
-1. Use a setTimeout to make the phrase "Uploading
-   your data to the dark web" change to "Making the 
-   sale..." after 1.5 seconds.
-⚠️ Do not change the loading svg!
-*/   
+1. Make it so that 1.5 seconds after seeing the 
+   "Making the sale..." message, the modal is 
+   cleared of its content and the following 
+   string of HTML is displayed instead.
+   
+   `<h2>Thanks you sucker! </h2>
+    <p>We just sold the rights to your eternal soul.</p>
+    <div class="idiot-gif">
+        <img src="images/pirate.gif">
+    </div>
+    ` 
+*/  
 
-})
+}) 
