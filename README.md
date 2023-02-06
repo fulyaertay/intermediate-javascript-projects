@@ -23,7 +23,7 @@
   
   ### Description
 
-  - The project is designed to take personal informations as cookie consent.
+  - The project is designed to take personal informations within the cookie consent.
 
  
   ### What I Learned?
