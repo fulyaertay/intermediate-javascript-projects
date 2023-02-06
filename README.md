@@ -38,6 +38,7 @@
   - toggling classes
   - disabled attribute
   - aria-label attribute
+  - mouseenter event
   
 
 
