@@ -13,6 +13,21 @@ modalCloseBtn.addEventListener('click', function(){
 
 consentForm.addEventListener('submit', function(e){
     e.preventDefault()
+    
+    const consentFormData = new FormData(consentForm)
+    console.log(consentFormData)
+
+/*   
+Challenge: 
+1. Inside the body of this event listener, 
+   create a const and set it equals to a new 
+   instance of FormData which takes in our HTML 
+   form element as a parameter.
+2. Log out the const (you should just get 
+   a FormData object).
+*/ 
+    
+    
     modalText.innerHTML = `
     <div class="modal-inner-loading">
         <img src="images/loading.svg" class="loading">
@@ -24,6 +39,7 @@ consentForm.addEventListener('submit', function(e){
         Making the sale...`
     }, 1500)
     
+    
     setTimeout(function(){
         document.getElementById('modal-inner').innerHTML = `
         <h2>Thanks you sucker! </h2>
@@ -31,10 +47,7 @@ consentForm.addEventListener('submit', function(e){
         <div class="idiot-gif">
             <img src="images/pirate.gif">
         </div>
-    ` 
+    `
     }, 3000)
   
-
-
-
 }) 
