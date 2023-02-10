@@ -14,7 +14,7 @@ memeModalCloseBtn.addEventListener('click', closeModal)
 getImageBtn.addEventListener('click', renderCat)
 
 
-window.addEventListener("mousedown", (e)=>{
+document.addEventListener("mousedown", (e)=>{
     if (!memeModal.contains(e.target)) {
         closeModal()
     }
