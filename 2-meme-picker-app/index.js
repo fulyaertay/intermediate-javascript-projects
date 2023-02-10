@@ -17,24 +17,25 @@ function highlightCheckedOption(e){
 }
 
 
-function getMatchingCatsArray(){
-    const isGif = gifsOnlyOption.checked
-    console.log(isGif)
-    
-/*
-Challenge:
-1. Take control of the gifs only option checkbox.
-2. Set up a const in getMatchingCatsArray to store 
-   a boolean which will be set to true if the 
-   "gifs only" option is checked and false if it's
-   not. (Think what a good name for this const would 
-   be.)
-3. Log it out to check it's working.
-*/
-     
+function getMatchingCatsArray(){     
     if(document.querySelector('input[type="radio"]:checked')){
         const selectedEmotion = document.querySelector('input[type="radio"]:checked').value
-        console.log(selectedEmotion)  
+        const isGif = gifsOnlyOption.checked
+        
+        const matchingCatsArray = catsData.filter(function(cat){
+            return cat.emotionTags.includes(selectedEmotion)
+        })
+        
+        console.log(matchingCatsArray)
+/*
+Challenge:
+1. Use the .filter() and .includes() methods to get 
+   an array of cats which have the selected emotion
+   in their emotionTags array. 
+2. Store this array in a const and log it out to check
+   it's working. Think: what would be a good name for the
+   const?
+*/  
     }  
 }
 
