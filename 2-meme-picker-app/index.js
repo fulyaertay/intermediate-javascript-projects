@@ -35,11 +35,25 @@ function getMatchingCatsArray(){
 }
 
 function getSingleCatObject(){
-
+    
+    const catsArray = getMatchingCatsArray()
+    
+    if (catsArray.length === 1){
+        console.log(catsArray[0])
+    }
+/*
+Challenge:
+1. Set up an if to check if there is only one
+   cat object in the array. If there is, log
+   out that cat object (but not the whole array!)
+   {}
+   Test: "happy", animated GIFS only checked.
+*/  
+    
 }
 
 function renderCat(){
-
+    getSingleCatObject() // temporary 
 }
  
 function getEmotionsArray(cats){
