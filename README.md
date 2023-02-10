@@ -5,6 +5,7 @@
 - [Projects](#projects)
 
   - [1-Cookie Consent App](#nft-site)
+  - [2-Meme Picker App](#meme-picker)
 
 
   ## Overview
@@ -39,6 +40,33 @@
   - disabled attribute
   - aria-label attribute
   - mouseenter event
+  
+  
+  ### 2-Meme Picker App
+  
+  ### Visulation of the App
+
+
+  ![image](./2-meme-picker-app/picker.png)
+  ![image](./2-meme-picker-app/picker2.png)
+  
+  ### Description
+
+  - The project is designed to pick a cat GIF relevant with user's mood
+
+ 
+  ### What I Learned?
+  
+
+  - for of()
+  - radio & checkbox
+  - getElementsByClassName()
+  - querySelector()
+  - classList.add(), .remove()
+  - import/export
+  - includes()
+  - filter()
+  - event.target
   
 
 
