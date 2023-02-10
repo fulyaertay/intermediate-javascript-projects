@@ -5,10 +5,23 @@ const getImageBtn = document.getElementById('get-image-btn')
 const gifsOnlyOption = document.getElementById('gifs-only-option')
 const memeModalInner = document.getElementById('meme-modal-inner')
 const memeModal = document.getElementById('meme-modal')
+const memeModalCloseBtn = document.getElementById('meme-modal-close-btn')
 
 emotionRadios.addEventListener('change', highlightCheckedOption)
 
 getImageBtn.addEventListener('click', renderCat)
+
+memeModalCloseBtn.addEventListener('click', closeModal)
+
+function closeModal(){
+    memeModal.style.display = 'none'
+}
+
+/*
+Challenge:
+1. Wire up the X button in the modal so
+   it closes the modal.
+*/ 
 
 function highlightCheckedOption(e){
     const radios = document.getElementsByClassName('radio')
@@ -33,53 +46,33 @@ function getMatchingCatsArray(){
             }            
         })
         return matchingCatsArray 
-    }   
+    }  
 }
 
 function getSingleCatObject(){
-    
     const catsArray = getMatchingCatsArray()
     
-    if (catsArray.length === 1){
+    if(catsArray.length === 1){
         return catsArray[0]
     }
-    else {
+    else{
         const randomNumber = Math.floor(Math.random() * catsArray.length)
         return catsArray[randomNumber]
     }
-    
 }
 
 function renderCat(){
-    
     const catObject = getSingleCatObject()
-    
-    memeModalInner.innerHTML = `
-    <img 
-    class="cat-img" 
-    src="./images/${catObject.image}"
-    alt="${catObject.alt}"
-    >
-    `
-    memeModal.style.display = 'flex'
-/*
-Challenge:
-1. Take the object that is returned by 
-   getSingleCatObject and save it to a const 
-   called "catObject".
-2. Set memeModalInner’s innerHTML to the HTML 
-   string below, remembering to insert the relevant 
-   data from catObject to replace the UPPERCASE text.
-3. Set memeModal’s display property to "flex". 
- 
-       `<img 
+    memeModalInner.innerHTML =  `
+        <img 
         class="cat-img" 
-        src="./images/CAT IMAGE"
-        alt="CAT ALT TEXT"
-        >`
-*/ 
+        src="./images/${catObject.image}"
+        alt="${catObject.alt}"
+        >
+        `
+    memeModal.style.display = 'flex'
 }
- 
+
 function getEmotionsArray(cats){
     const emotionsArray = []    
     for (let cat of cats){
@@ -91,7 +84,6 @@ function getEmotionsArray(cats){
     }
     return emotionsArray
 }
-
 
 function renderEmotionsRadios(cats){
         
