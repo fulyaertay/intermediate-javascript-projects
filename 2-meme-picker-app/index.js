@@ -16,26 +16,28 @@ function highlightCheckedOption(e){
     document.getElementById(e.target.id).parentElement.classList.add('highlight')
 }
 
-
 function getMatchingCatsArray(){     
     if(document.querySelector('input[type="radio"]:checked')){
         const selectedEmotion = document.querySelector('input[type="radio"]:checked').value
         const isGif = gifsOnlyOption.checked
         
         const matchingCatsArray = catsData.filter(function(cat){
-            return cat.emotionTags.includes(selectedEmotion)
-        })
-        
-        console.log(matchingCatsArray)
+            if(isGif){
+                return cat.emotionTags.includes(selectedEmotion) && cat.isGif
+            }
+            else{
+                return cat.emotionTags.includes(selectedEmotion)
+            }
 /*
 Challenge:
-1. Use the .filter() and .includes() methods to get 
-   an array of cats which have the selected emotion
-   in their emotionTags array. 
-2. Store this array in a const and log it out to check
-   it's working. Think: what would be a good name for the
-   const?
-*/  
+1. Change the .filter() method's function so it returns an 
+   array that only has GIFs if the 'GIFs only' option is 
+   checked. If the 'GIFs only' option is not checked, it
+   should return an array of all matches as it does now.
+*/ 
+            
+        })
+        return matchingCatsArray
     }  
 }
 
