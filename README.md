@@ -24,7 +24,7 @@
   
   ### Description
 
-  - The project is designed to take personal informations within the cookie consent.
+  - The project is created to take personal informations within the cookie consent.
 
  
   ### What I Learned?
@@ -52,7 +52,7 @@
   
   ### Description
 
-  - The project is designed to pick a cat GIF relevant with user's mood
+  - The project is created to pick a cat GIF relevant with user's mood
 
  
   ### What I Learned?
