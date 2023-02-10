@@ -14,6 +14,11 @@ memeModalCloseBtn.addEventListener('click', closeModal)
 getImageBtn.addEventListener('click', renderCat)
 
 
+window.addEventListener("mouseup", (e)=>{
+    if (!memeModal.contains(e.target)) {
+        closeModal()
+    }
+})
 
 function highlightCheckedOption(e){
     const radios = document.getElementsByClassName('radio')
@@ -27,7 +32,7 @@ function closeModal(){
     memeModal.style.display = 'none'
 }
 
-function renderCat(){
+function renderCat(e){
     const catObject = getSingleCatObject()
     memeModalInner.innerHTML =  `
         <img 
@@ -37,19 +42,9 @@ function renderCat(){
         >
         `
     memeModal.style.display = 'flex'
-
-    memeModal.addEventListener("click",clickedOutside)
-
-   
-
-   
  
-}
 
-function clickedOutside(e){
-    if(e.target!=memeModal && getImage){
-        memeModal.style.display = 'none'
-    }
+
 }
 
 function getSingleCatObject(){
@@ -114,7 +109,6 @@ function renderEmotionsRadios(cats){
 }
 
 renderEmotionsRadios(catsData)
-
 
 
 
