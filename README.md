@@ -48,7 +48,7 @@
 
 
   ![image](./2-meme-picker-app/picker.png)
-  ![image](./2-meme-picker-app/picker2.png)
+  ![image](./2-meme-picker-app/pick2.png)
   
   ### Description
 
