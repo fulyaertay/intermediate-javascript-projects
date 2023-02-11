@@ -67,6 +67,7 @@
   - includes()
   - filter()
   - event.target
+  - mouseup event
   
 
 
