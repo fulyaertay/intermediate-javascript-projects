@@ -68,6 +68,7 @@
   - filter()
   - event.target
   - mouseup event
+  - window.addeventListener()
   
 
 
