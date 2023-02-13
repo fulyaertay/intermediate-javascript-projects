@@ -5,7 +5,8 @@
 - [Projects](#projects)
 
   - [1-Cookie Consent App](#nft-site)
-  - [2-Meme Picker App](#meme-picker)
+  - [2-Shopping List App](#shopping-list)
+  - [3-Meme Picker App](#meme-picker)
 
 
   ## Overview
@@ -42,13 +43,26 @@
   - mouseenter event
   
   
-  ### 2-Meme Picker App
+  ### 2-Shopping List App
   
   ### Visulation of the App
 
 
-  ![image](./2-meme-picker-app/picker.png)
-  ![image](./2-meme-picker-app/pick2.png)
+  ![image](./2-shopping-list-app/shopping-list.png)
+  
+  ### Description
+
+  - The project is created to provide a list of shopping .
+
+  
+  
+  ### 3-Meme Picker App
+  
+  ### Visulation of the App
+
+
+  ![image](./3-meme-picker-app/picker.png)
+  ![image](./3-meme-picker-app/pick2.png)
   
   ### Description
 
