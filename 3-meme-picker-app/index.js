@@ -36,7 +36,7 @@ function closeModal(){
 function getSingleCatObject(){
     const catsArray = getMatchingCatsArray()
     
-    if(catsArray.length == 1){
+   
         memeModalInner.innerHTML =  `
         <img 
         class="cat-img" 
@@ -45,16 +45,8 @@ function getSingleCatObject(){
         >
     
         `
-    }
-    else{
-        memeModalInner.innerHTML =  `
-        <img 
-        class="cat-img" 
-        src="./images/${catsArray.image}"
-        alt="${catsArray.alt}"
-        >
-    
-        `
+   
+        memeModal.style.display = 'flex'
 
     }
  
@@ -64,8 +56,8 @@ function getSingleCatObject(){
           
         
     
-    memeModal.style.display = 'flex'
-}
+ 
+
 
 function getMatchingCatsArray(){     
     if(document.querySelector('input[type="radio"]:checked')){
