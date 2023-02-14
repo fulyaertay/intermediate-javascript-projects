@@ -35,8 +35,7 @@ function closeModal(){
 
 function getSingleCatObject(){
     const catsArray = getMatchingCatsArray()
-    
-   
+    if(catsArray.length === 1){
         memeModalInner.innerHTML =  `
         <img 
         class="cat-img" 
@@ -45,10 +44,23 @@ function getSingleCatObject(){
         >
     
         `
-   
-        memeModal.style.display = 'flex'
-
     }
+    else{
+        memeModalInner.innerHTML =  `
+        <img 
+        class="cat-img" 
+        src="./images/${catsArray[Math.floor(Math.random() * catsArray.length)].image}"
+        alt="${catsArray[Math.floor(Math.random() * catsArray.length)].image.alt}"
+        >
+    
+        `
+   
+        
+   
+       
+
+    } memeModal.style.display = 'flex'
+}
  
    
         
