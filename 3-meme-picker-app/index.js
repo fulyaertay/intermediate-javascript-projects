@@ -34,19 +34,26 @@ function closeModal(){
 
 function renderCat(e){
     const catObject = getSingleCatObject()
-    memeModalInner.innerHTML =  `
+    if (catObject.length===1){
+        memeModalInner.innerHTML =  `
         <img 
         class="cat-img" 
         src="./images/${catObject.image}"
         alt="${catObject.alt}"
         >
-        <img 
-        class="cat-img" 
-        src="./images/${catObject.image}"
-        alt="${catObject.alt}"
-        >
-        
+    
         `
+    }
+    else{
+        memeModalInner.innerHTML =  `
+        <img 
+        class="cat-img2" 
+        src="./images/${catObject.image}"
+        alt="${catObject.alt}"
+        >
+    
+        `
+    }
     memeModal.style.display = 'flex'
  
 
@@ -60,8 +67,8 @@ function getSingleCatObject(){
         return catsArray[0]
     }
     else{
-        const randomNumber = Math.floor(Math.random() * catsArray.length)
-        return catsArray[randomNumber]
+        
+        return catsArray
     }
 }
 
