@@ -11,7 +11,7 @@ emotionRadios.addEventListener("change", highlightCheckedOption);
 
 memeModalCloseBtn.addEventListener("click", closeModal);
 
-getImageBtn.addEventListener("click", getSingleCatObject);
+getImageBtn.addEventListener("click", getCatObject);
 
 window.addEventListener("mousedown", (e) => {
   if (!memeModal.contains(e.target)) {
@@ -31,7 +31,7 @@ function closeModal() {
   memeModal.style.display = "none";
 }
 
-function getSingleCatObject() {
+function getCatObject() {
   const catsArray = getMatchingCatsArray();
 
   if (catsArray.length === 1) {
