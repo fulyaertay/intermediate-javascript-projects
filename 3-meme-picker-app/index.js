@@ -40,6 +40,7 @@ function renderCat(e){
         src="./images/${catObject.image}"
         alt="${catObject.alt}"
         >
+        
         `
     memeModal.style.display = 'flex'
  
