@@ -11,7 +11,7 @@ emotionRadios.addEventListener('change', highlightCheckedOption)
 
 memeModalCloseBtn.addEventListener('click', closeModal)
 
-getImageBtn.addEventListener('click', renderCat)
+getImageBtn.addEventListener('click', getSingleCatObject)
 
 
 window.addEventListener("mousedown", (e)=>{
@@ -32,45 +32,39 @@ function closeModal(){
     memeModal.style.display = 'none'
 }
 
-function renderCat(e){
-    const catObject = getSingleCatObject()
-    console.log(catObject)
-    if (catObject.length==1){
-        memeModalInner.innerHTML =  `
-        <img 
-        class="cat-img" 
-        src="./images/${catObject.image}"
-        alt="${catObject.alt}"
-        >
-    
-        `
-    }
-    else{
-        memeModalInner.innerHTML =  `
-        <img 
-        class="cat-img2" 
-        src="./images/${catObject.image}"
-        alt="${catObject.alt}"
-        >
-    
-        `
-    }
-    memeModal.style.display = 'flex'
- 
-
-
-}
 
 function getSingleCatObject(){
     const catsArray = getMatchingCatsArray()
     
-    if(catsArray.length === 1){
-        return catsArray[0]
+    if(catsArray.length == 1){
+        memeModalInner.innerHTML =  `
+        <img 
+        class="cat-img" 
+        src="./images/${catsArray[0].image}"
+        alt="${catsArray[0].alt}"
+        >
+    
+        `
     }
     else{
-        
-        return catsArray
+        memeModalInner.innerHTML =  `
+        <img 
+        class="cat-img" 
+        src="./images/${catsArray.image}"
+        alt="${catsArray.alt}"
+        >
+    
+        `
+
     }
+ 
+   
+        
+       
+          
+        
+    
+    memeModal.style.display = 'flex'
 }
 
 function getMatchingCatsArray(){     
