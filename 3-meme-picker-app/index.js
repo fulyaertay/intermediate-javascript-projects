@@ -35,8 +35,10 @@ function closeModal(){
 
 function getSingleCatObject(){
     const catsArray = getMatchingCatsArray()
+  
     if(catsArray.length === 1){
         memeModalInner.innerHTML =  `
+        <h3>We picked some cats for you..</h3>
         <img 
         class="cat-img" 
         src="./images/${catsArray[0].image}"
@@ -46,10 +48,12 @@ function getSingleCatObject(){
         `
     }
     else{
-        memeModalInner.innerHTML =""
+        memeModalInner.innerHTML =" <h3>We picked some cats for you..</h3>"
+
         for (let cat of catsArray){
            
             memeModalInner.innerHTML +=  `
+           
         <img 
         class="cat-img2" 
         src="./images/${cat.image}"
