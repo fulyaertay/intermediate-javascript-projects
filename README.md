@@ -67,6 +67,13 @@
   ### Description
 
   - The project is created to pick a cat GIF relevant with user's mood
+  
+  ### Stretch Goals: Completed!
+  
+  - Click outside the modal to close modal
+  - Display more than one result (thumbnails in a gallery)
+  - Refactor the UX
+  
 
  
   ### What I Learned?
