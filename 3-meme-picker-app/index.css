@@ -134,9 +134,10 @@ input[type="radio"]{
     border: 1px solid #67595e;
     border-radius: 5px;
     width: 420px;
-    min-height: 490px;
+    max-height: 800px;
     background-color: #fff0ee;
     padding: 30px;
+    overflow: auto;
 }
 
 
