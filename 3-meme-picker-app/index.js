@@ -34,6 +34,7 @@ function closeModal(){
 
 function renderCat(e){
     const catObject = getSingleCatObject()
+    console.log(catObject)
     if (catObject.length===1){
         memeModalInner.innerHTML =  `
         <img 
