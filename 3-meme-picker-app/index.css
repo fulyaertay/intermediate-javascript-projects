@@ -145,10 +145,10 @@ input[type="radio"]{
     justify-content: center;
     border: 1px solid #67595e;
     border-radius: 5px;
-    width: 420px;
+    width: 500px;
     max-height: 800px;
     background-color: #fff0ee;
-    padding: 20px;
+    padding: 30px;
    
 }
 
