@@ -46,14 +46,20 @@ function getSingleCatObject(){
         `
     }
     else{
-        memeModalInner.innerHTML =  `
+        memeModalInner.innerHTML =""
+        for (let cat of catsArray){
+           
+            memeModalInner.innerHTML +=  `
         <img 
-        class="cat-img" 
-        src="./images/${catsArray[Math.floor(Math.random() * catsArray.length)].image}"
-        alt="${catsArray[Math.floor(Math.random() * catsArray.length)].image.alt}"
+        class="cat-img2" 
+        src="./images/${cat.image}"
+        alt="${cat.alt}"
         >
     
         `
+
+        }
+        
    
         
    
