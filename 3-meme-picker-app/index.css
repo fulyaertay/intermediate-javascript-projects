@@ -137,15 +137,19 @@ input[type="radio"]{
     height: 490px;
     background-color: #fff0ee;
 }
-.meme-modal-inner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
+
 
 .cat-img{
     max-width: 340px;
     max-height: 420px;
+    border-radius: 5px;
+}
+
+.cat-img2{
+    display: flex;
+    max-width: 80px;
+    max-height: 80px;
     border-radius: 5px;
 }
 
