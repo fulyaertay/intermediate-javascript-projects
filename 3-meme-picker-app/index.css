@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     font-family: 'Karla', sans-serif;
+
 }
 
 /*typography*/
@@ -126,7 +127,7 @@ input[type="radio"]{
     display: none; /*flex when displayed*/
     position: fixed;
     margin: auto;
-    top: 80px;
+    top: 15px;
     left: 0;
     right: 0;
     align-items: center;
@@ -136,7 +137,7 @@ input[type="radio"]{
     width: 420px;
     max-height: 800px;
     background-color: #fff0ee;
-    padding: 30px;
+    padding: 20px;
     overflow: auto;
 }
 
