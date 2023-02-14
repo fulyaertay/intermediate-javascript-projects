@@ -63,8 +63,8 @@
   ### Visulation of the App
 
 
-  ![image](./3-meme-picker-app/picker.png)
-  ![image](./3-meme-picker-app/pick2.png)
+  ### ![image](./3-meme-picker-app/picker.png)
+  ### ![image](./3-meme-picker-app/pick2.png)
   
   ### Description
 
