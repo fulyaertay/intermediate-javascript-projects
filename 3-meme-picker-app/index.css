@@ -146,12 +146,13 @@ input[type="radio"]{
 #meme-modal-inner{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap:10px;
 }
 .cat-img{
     width: 340px;
-    height: 420px;
+    height: auto;
     border-radius: 5px;
 }
 

@@ -36,7 +36,7 @@ function getSingleCatObject() {
 
   if (catsArray.length === 1) {
     memeModalInner.innerHTML = `
-        <h3>We picked some cats for you..</h3>
+        <h3>We picked a cat for you..</h3>
         <img 
         class="cat-img" 
         src="./images/${catsArray[0].image}"
