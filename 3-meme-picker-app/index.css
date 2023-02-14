@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 html, body {
     margin: 0;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     height: 100vh;
+    font-size:20px;
 
 }
 
@@ -9,6 +12,7 @@ html, body {
 
 h1, h2, h3{
     text-align: center;
+    letter-spacing: 3px;
 }
 
 h1, h2{
@@ -50,8 +54,9 @@ header{
 .controls-container{
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 400px;
     margin: 0px auto;
+
 }
 
 /* controls */
@@ -61,6 +66,7 @@ header{
     flex-direction: column;
     border: 1px solid #bcbcbc;
     border-radius: 5px;
+    
 }
 
 .radio{
@@ -68,6 +74,10 @@ header{
     align-items: center;
     border-bottom: 1px solid #bcbcbc;
     padding: 4px 8px;
+}
+
+.radio-texts{
+    font-size: 16px;
 }
 
 .radio:first-child{
