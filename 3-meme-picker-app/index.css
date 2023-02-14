@@ -126,9 +126,9 @@ input[type="radio"]{
 
 .meme-modal{
     display: none; /*flex when displayed*/
-    position: fixed;
+    position: absolute;
     margin: auto;
-    top: 15px;
+    top: 80px;
     left: 0;
     right: 0;
     align-items: center;
@@ -139,7 +139,7 @@ input[type="radio"]{
     max-height: 800px;
     background-color: #fff0ee;
     padding: 20px;
-    overflow: auto;
+   
 }
 
 
