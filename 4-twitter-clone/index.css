@@ -32,7 +32,7 @@ i{
 /* layout */
 
 main, header{
-    width: 290px;
+    width: 400px;
     margin: 0 auto;
 }
 
@@ -76,7 +76,7 @@ button{
 .tweet{
     border-top: 1px solid lightgray;
     padding: 20px 0 0 0;
-    width: 100%;
+    width: 400px;
     margin: 15px 0;
 }
 
@@ -90,7 +90,7 @@ button{
     display: flex;
     font-size: 13px;
     justify-content: space-between;
-    width: 160px;
+    width: 300px;
 }
 
 .tweet-detail{
@@ -102,7 +102,7 @@ button{
     border-top: 1px solid lightgray;
     padding: 20px 0 0 0px;
     margin: 10px 0 10px 40px;
-    width: 80%;
+    width: 400px;
 }
 
 .handle{
@@ -113,7 +113,7 @@ button{
 }
 
 .tweet-text{
-    width: 207px;
+    width: 400px;
     font-size: 14px;
     line-height: 20px;
 }
