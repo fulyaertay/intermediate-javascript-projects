@@ -19,22 +19,19 @@ function handleLikeClick(tweetId){
     
 /*
 Challenge:
-1. When a tweet is liked, it's 'isLiked' property
-   should be set to true.
-2. When a tweet is unliked, it's 'isLiked' property
-   should be set to false and its 'likes' count
-   should be decremented.
-*/  
+1. Delete the two lines of code marked below and
+   replace them with just one line of code outside 
+   of the if else.
+   Hint: Google the logical NOT operator (!)
+*/ 
 
     if (targetTweetObj.isLiked){
         targetTweetObj.likes--
-        targetTweetObj.isLiked = false
     }
     else{
-        targetTweetObj.likes++
-        targetTweetObj.isLiked = true     
+        targetTweetObj.likes++ 
     }
-    
+    targetTweetObj.isLiked = !targetTweetObj.isLiked
     render()
 }
 
