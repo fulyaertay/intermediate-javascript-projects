@@ -97,7 +97,7 @@
   
   ### 4-Twimba: Twitter Clone App
   
-  ### [Live Link](https://scrimba-meme-picker.netlify.app/)
+  ### [Live Link](https://scrimba-twitter-clone.netlify.app/)
   
   ### Visulation of the App
 
