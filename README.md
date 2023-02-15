@@ -7,6 +7,7 @@
   - [1-Cookie Consent App](#nft-site)
   - [2-Shopping List App](#shopping-list)
   - [3-Meme Picker App](#meme-picker)
+  - [4-Twitter Clone App](#twitter-clone)
 
 
   ## Overview
@@ -92,6 +93,38 @@
   - event.target
   - mouseup event
   - window.addeventListener()
+  
+  
+  ### 4-Twimba: Twitter Clone App
+  
+  ### [Live Link](https://scrimba-twitter-clone.netlify.app/)
+  
+  ### Visulation of the App
+
+
+  ### ![image](./4-twitter-clone/twitter-clone.png)
+  
+  ### Description
+
+  - The project provides a clone of Twitter using pure Javascript. Users can able;
+    - Send a tweet to feed
+    - List tweets' replies
+    - Like an tweet
+    - Retweet a tweet
+  
+
+ 
+  ### What I Learned?
+  
+
+  - textarea
+  - data-attributes
+  - conditionally render style
+  - Not operator (!)
+  - CDNs(add icons using fontawesome)
+  - uuid
+  - class.toggle
+  - forEach
   
 
 
