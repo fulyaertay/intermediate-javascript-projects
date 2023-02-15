@@ -1,11 +1,7 @@
 import { tweetsData } from './data.js'
-const tweetInput = document.getElementById('tweet-input')
+import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
 
-/*
-Challenge:
-1. Somewhere in index.js there is a line of code 
-   we no longer need. Find it and delete it!
-*/ 
+const tweetInput = document.getElementById('tweet-input')
 
 document.addEventListener('click', function(e){
     if(e.target.dataset.like){
@@ -20,11 +16,6 @@ document.addEventListener('click', function(e){
     else if(e.target.id === 'tweet-btn'){
         handleTweetBtnClick()
     }
-/*
-Challenge:
-1. Add an else if so that if the Tweet button
-   is clicked, handleTweetBtnClick is called.
-*/ 
 })
  
 function handleLikeClick(tweetId){ 
@@ -62,7 +53,23 @@ function handleReplyClick(replyId){
 }
 
 function handleTweetBtnClick(){
-    console.log(tweetInput.value)
+/*
+Challenge:
+1. Add the new tweet object to 'tweetsData'
+   and make it render at the top of the feed. 
+*/ 
+    tweetsData.unshift({
+        handle: `@Scrimba`,
+        profilePic: `images/scrimbalogo.png`,
+        likes: 0,
+        retweets: 0,
+        tweetText: tweetInput.value,
+        replies: [],
+        isLiked: false,
+        isRetweeted: false,
+        uuid: uuidv4()
+    })
+    render()
 }
 
 function getFeedHtml(){
