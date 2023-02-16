@@ -164,11 +164,12 @@ function getFeedHtml() {
 </div>
 `;
   });
-  localStorage.setItem("tweetsData", JSON.stringify(tweetsData) )
+  
   return feedHtml;
 }
 
 function render() {
+    
   document.getElementById("feed").innerHTML = getFeedHtml();
 }
 

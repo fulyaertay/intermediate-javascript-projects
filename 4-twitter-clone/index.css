@@ -16,11 +16,11 @@ h1{
 i{
     font-size: 15px;
     cursor: pointer;
-    color: wheat;
+    color: rgb(243, 236, 236);
 }
 
 .fa-solid{
-    color: wheat;
+    color: rgb(243, 236, 236);
 }
 
 .liked{
@@ -61,7 +61,7 @@ textarea{
     font-size: 20px;
     line-height: 30px;
     background-color: rgb(15, 15, 15);
-    color: wheat;
+    color:rgb(243, 236, 236);
 }
 
 button{
@@ -89,7 +89,7 @@ button{
     display: flex;
     align-items: flex-start;
     gap: 10px;
-    color: wheat;
+    color: rgb(243, 236, 236);
 }
 
 .tweet-details{
@@ -117,7 +117,7 @@ button{
 .handle{
     font-size: 12px;
     font-weight: 600;
-    color: wheat;
+    color:rgb(243, 236, 236);
     letter-spacing: 1px;
     margin-top: 0;
     display: flex;
