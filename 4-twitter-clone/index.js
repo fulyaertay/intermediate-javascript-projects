@@ -83,7 +83,7 @@ function handleDeleteBtnClick(tweet) {
   const index = tweetsData.indexOf(tweet);
   tweetsData.forEach(function (tweet, index) {
     if (index > -1) {
-      tweetsData.splice(index, 1);
+      tweetsData.splice(index,1);
     }
   });
 
