@@ -16,10 +16,11 @@ h1{
 i{
     font-size: 15px;
     cursor: pointer;
+    color: wheat;
 }
 
 .fa-solid{
-    color: #999;
+    color: wheat;
 }
 
 .liked{
@@ -60,6 +61,7 @@ textarea{
     font-size: 20px;
     line-height: 30px;
     background-color: rgb(15, 15, 15);
+    color: wheat;
 }
 
 button{
@@ -87,6 +89,7 @@ button{
     display: flex;
     align-items: flex-start;
     gap: 10px;
+    color: wheat;
 }
 
 .tweet-details{
@@ -94,11 +97,14 @@ button{
     font-size: 13px;
     justify-content: space-between;
     width: 300px;
+    
+    
 }
 
 .tweet-detail{
     display: flex;
     gap: 4px;
+    
 }
 
 .tweet-reply{
@@ -110,8 +116,9 @@ button{
 
 .handle{
     font-size: 12px;
-    font-weight: 500;
-    color: #555;
+    font-weight: 600;
+    color: wheat;
+    letter-spacing: 1px;
     margin-top: 0;
 }
 
@@ -119,6 +126,7 @@ button{
     width: 400px;
     font-size: 14px;
     line-height: 20px;
+    
 }
 
 /* images */
