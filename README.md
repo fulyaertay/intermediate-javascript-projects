@@ -108,7 +108,7 @@
 
   - The project provides a clone of Twitter using pure Javascript. Users can able;
     - Send a tweet to feed
-    - List tweets' replies
+    - List tweets' replies by clicking icon
     - Like an tweet
     - Retweet a tweet
   
