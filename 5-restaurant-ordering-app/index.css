@@ -4,7 +4,14 @@ body {
     box-sizing: border-box;
     background-color: #ddd8d8;
 } 
+.listMenu{
+  
+    width:400px;
+    margin: 80 auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow:10px 10px #dad7d7;
 
+}
 .header{
     background-image: url("images/burger.png");
     background-size:cover;
@@ -16,14 +23,6 @@ body {
     padding: 20px;
     font-size: 12px;
  
-}
-
-.listMenu{
-  
-    width:400px;
-    margin: 80 auto;
-    background-color: rgb(255, 255, 255);
-
 }
 
 .menuItems{
