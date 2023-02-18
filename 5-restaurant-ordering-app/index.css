@@ -64,6 +64,7 @@ body {
 i{
     font-size: 25px;
     color:rgb(53, 30, 14);
+    cursor: pointer;
 }
 .logo{
     font-size: 30px;
@@ -96,4 +97,14 @@ i{
     padding: 15px;
     width:500px;
     color:white;
+    cursor: pointer;
+}
+h4{
+    text-align: center;
+}
+.remove{
+    font-size: 10px;
+    color:#33352d;
+    font-weight: 700;
+    cursor: pointer;
 }
