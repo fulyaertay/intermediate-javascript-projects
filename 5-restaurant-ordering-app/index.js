@@ -15,10 +15,6 @@ function  handleOrderDetails(menuId){
     })[0]
     orderDetails.classList.toggle("hidden")
 
-
-
-
-
  
 
 
