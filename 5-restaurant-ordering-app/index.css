@@ -36,4 +36,12 @@ body {
     height: 150px;
     padding: 40px;
     margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  
+}
+.order-content{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
 }
