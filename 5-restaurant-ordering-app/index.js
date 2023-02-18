@@ -12,7 +12,7 @@ document.addEventListener("click",function(e){
 function  handleOrderDetails(menuId){
    const menuObject= menuArray.filter(function(menu){
         return menu.id==menuId
-    })
+    })[0]
     console.log(menuObject)
     
 
