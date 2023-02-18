@@ -18,8 +18,15 @@ body {
 }
 
 .listMenu{
+  
     width:400px;
     margin: 80 auto;
     background-color: #F4F4F4;
 
+}
+
+.menuItems{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
 }
