@@ -33,15 +33,30 @@ body {
 
 }
 .menu{
-    height: 150px;
+    border-bottom:2px solid #ccd5ae;
     padding: 40px;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
+    height: 40px;
   
 }
 .order-content{
     display: flex;
     flex-direction: column;
-    gap:20px;
+    gap:10px;
+    
+}
+
+.ingredients{
+    font-size: 10px;
+    color: #33352d;
+    
+}
+.price{
+    font-size: 12px;
+    font-weight: 800;
+}
+.food-name{
+    font-weight: 800;
 }
