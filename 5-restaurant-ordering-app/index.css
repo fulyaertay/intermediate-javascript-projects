@@ -4,6 +4,19 @@ body {
     box-sizing: border-box;
 } 
 
+.header{
+    background-image: url("images/burger.png");
+    background-size:cover;
+    color:white;
+    width:400px;
+    height: 180px;
+}
+.content-header{
+    padding: 20px;
+    font-size: 12px;
+ 
+}
+
 .listMenu{
     width:400px;
     margin: 80 auto;
