@@ -70,12 +70,30 @@ i{
 }
 
 .order-details{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+    text-align: center;
     padding: 20px;
 }
 
 .hidden{
     display: none;
+}
+
+.orders{
+    
+      
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    
+      
+    
+}
+
+.completeBtn{
+    background-color: #1da87a;
+    border: none;
+    padding: 15px;
+    width:500px;
+    color:white;
 }
