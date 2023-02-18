@@ -68,3 +68,6 @@ i{
 .logo{
     font-size: 30px;
 }
+.hidden{
+    display: none;
+}
