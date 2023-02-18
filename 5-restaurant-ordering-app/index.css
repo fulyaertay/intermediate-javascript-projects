@@ -27,15 +27,10 @@ body {
  
 }
 
-.menuItems{
-    display: flex;
-    flex-direction: column;
 
-}
 .menu{
     border-bottom:2px solid #b8bea1;
     padding: 40px;
-    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     height: 40px;
@@ -44,7 +39,10 @@ body {
 .order-content{
     display: flex;
     flex-direction: column;
-    gap:5px;
+    margin-right: auto;
+    margin-left: 10px;
+    gap:10px;
+
     
 }
 
@@ -65,7 +63,5 @@ i{
     color:rgb(53, 30, 14);
 }
 .logo{
-    width: 20px;
-    height: 20px;
     font-size: 30px;
 }

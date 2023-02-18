@@ -5,7 +5,7 @@ const listMenu=document.querySelector("#list-orders")
 function renderMenu(){
     let innerHtml=""
     menuArray.forEach(function(menu){
-        innerHtml=`<div class="menuItems">
+        innerHtml=`
         <div class="menu">
           <div class="logo">${menu.emoji}</div>
           <div class="order-content">
@@ -16,7 +16,7 @@ function renderMenu(){
           <div class="add-cart">
             <span><i class="fa fa-plus-circle" data-add-chart="${menu.id}"></i></span>
           </div>
-        </div>
+       
       </div>`
       listMenu.innerHTML+=innerHtml;
 
