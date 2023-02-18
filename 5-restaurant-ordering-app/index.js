@@ -1,5 +1,5 @@
 import { menuArray } from "./data.js"
-const orderDetails=document.getElementById("order-details")
+const orderDetails=document.querySelector(".order-details")
 const listMenu=document.querySelector("#list-orders")
 
 document.addEventListener("click",function(e){
@@ -11,10 +11,10 @@ document.addEventListener("click",function(e){
 
 function  handleOrderDetails(menuId){
    const menuObject= menuArray.filter(function(menu){
-        return menu.id==menuId
+        return menu.id == menuId
     })[0]
-    console.log(menuObject)
-    
+    orderDetails.classList.toggle("hidden")
+
 
 
 
