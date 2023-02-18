@@ -1,6 +1,28 @@
 import { menuArray } from "./data.js"
-
+const orderDetails=document.getElementById("order-details")
 const listMenu=document.querySelector("#list-orders")
+
+document.addEventListener("click",function(e){
+    if(e.target.dataset.add){
+        handleOrderDetails(e.target.dataset.add)
+
+    }
+})
+
+function  handleOrderDetails(menuId){
+   const menuObject= menuArray.filter(function(menu){
+        return menu.id==menuId
+    })
+    console.log(menuObject)
+    
+
+
+
+
+ 
+
+
+}
 
 function renderMenu(){
     let innerHtml=""
@@ -14,11 +36,15 @@ function renderMenu(){
             <div class="price">${menu.price}$</div>
           </div>
           <div class="add-cart">
-            <span><i class="fa fa-plus-circle" data-add-chart="${menu.id}"></i></span>
+            <span><i class="fa fa-plus-circle" data-add=${menu.id}></i></span>
           </div>
+
+        
        
       </div>`
       listMenu.innerHTML+=innerHtml;
+
+
 
     })
    

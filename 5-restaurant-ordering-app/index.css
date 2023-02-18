@@ -43,7 +43,7 @@ body {
     margin-right: auto;
     margin-left: 10px;
     gap:10px;
-    letter-spacing: 2px;
+
 
     
 }
@@ -51,6 +51,7 @@ body {
 .ingredients{
     font-size: 10px;
     color: #33352d;
+    letter-spacing: 1px;
     
 }
 .price{
