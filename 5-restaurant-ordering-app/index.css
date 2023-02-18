@@ -10,7 +10,7 @@ body {
   
     width:400px;
     margin: 80 auto;
-    background-color: #fde9bb;
+    background-color: #f8e8c2;
     box-shadow:10px 10px #cbd3b2;
 
 }
@@ -33,7 +33,7 @@ body {
 
 }
 .menu{
-    border-bottom:2px solid #ccd5ae;
+    border-bottom:2px solid #b8bea1;
     padding: 40px;
     margin-top: 10px;
     display: flex;
