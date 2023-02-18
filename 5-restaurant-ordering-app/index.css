@@ -2,12 +2,13 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #ddd8d8;
 } 
 
 .header{
     background-image: url("images/burger.png");
     background-size:cover;
-    color:white;
+    color:rgb(255, 252, 252);
     width:400px;
     height: 180px;
 }
@@ -21,7 +22,7 @@ body {
   
     width:400px;
     margin: 80 auto;
-    background-color: #F4F4F4;
+    background-color: rgb(255, 255, 255);
 
 }
 
@@ -31,7 +32,7 @@ body {
 
 }
 .menu{
-    background-color: wheat;
+    background-color: #f7f2f2 ;
     height: 150px;
     padding: 10px;
     margin-top: 10px;
