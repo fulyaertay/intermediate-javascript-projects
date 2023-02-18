@@ -10,7 +10,6 @@ function renderMenu(){
           <div class="logo">${menu.emoji}</div>
           <div class="order-content">
             <div class="food-name">${menu.name}</div>
-    
             <div class="ingredients">${menu.ingredients}</div>
             <div class="price">${menu.price}$</div>
           </div>
