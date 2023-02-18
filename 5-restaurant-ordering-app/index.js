@@ -14,7 +14,7 @@ function renderMenu(){
             <div class="price">${menu.price}$</div>
           </div>
           <div class="add-cart">
-            <span><i class="fa fa-plus-circle" data-add-chart=""></i></span>
+            <span><i class="fa fa-plus-circle" data-add-chart="${menu.id}"></i></span>
           </div>
         </div>
       </div>`
