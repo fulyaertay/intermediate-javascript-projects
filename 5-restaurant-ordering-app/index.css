@@ -25,6 +25,8 @@ body {
 .content-header{
     padding: 20px;
     font-size: 12px;
+    letter-spacing: 2px;
+   
  
 }
 
@@ -43,6 +45,7 @@ body {
     margin-right: auto;
     margin-left: 10px;
     gap:10px;
+   
 
 
     
@@ -78,6 +81,9 @@ i{
 
 .hidden{
     display: none;
+}
+.display{
+    display:flex;
 }
 
 .orders{

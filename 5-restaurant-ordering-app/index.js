@@ -6,7 +6,7 @@ const listMenu=document.querySelector("#list-orders")
 
 function  handleOrderDetails(menuId){
   
-    orderDetails.classList.toggle("hidden")
+    orderDetails.classList.add("display")
 
  
 
