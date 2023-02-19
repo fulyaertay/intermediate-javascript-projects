@@ -3,14 +3,21 @@ import { menuArray } from './data.js'
 const orderBtn = document.getElementById('order-btn')
 const yourOrderTitle = document.getElementById('your-order-title')
 const payBtn = document.getElementById('pay-btn')
-
+const orderSection=document.getElementsByClassName(".order-section-price")
 let sumOrderPrice = 0
 
 document.addEventListener('click', function(e){
     if(e.target.dataset.add){
         handleAddClick(e.target.dataset.add)
+    }else if(e.target.dataset.remove){
+        handleRemove(e.target.dataset.remove)
+
     }
 })
+function handleRemove(id) {
+    
+    console.log(id)
+  }
 
 orderBtn.addEventListener('click', function(){
     document.getElementById('card-deatils').style.display = 'block'
@@ -32,7 +39,7 @@ function handleAddClick(addId){
     let total = ''
     orderHtml += `
         <div class="order-section-price">
-            <div class="order-name"> ${obj.name} <span class="remove-order">remove</span></div>
+            <div class="order-name"> ${obj.name} <i class="fa fa-trash remove-order" data-remove=" ${obj.id}"></i></div>
             <div class="order-price">$${obj.price} </div>
         </div>
         
@@ -55,7 +62,18 @@ function handleAddClick(addId){
     // console.log(sumOrderPrice)
         document.getElementById('single-order').innerHTML += orderHtml
         document.getElementById('total').innerHTML = total
+
+
+      
+
+
+
+
+         
 }
+
+
+
 
 function getFeed(){
     let feedHtml = ''
