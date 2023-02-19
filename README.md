@@ -138,7 +138,7 @@
   
   ### Description
 
-  - The project provides to order foods with using pure Javascript. Users can able;
+  - The project provides to list restaurant menu and order them. Users can able;
     - Get an order when clicked add button
     - Added multiple orders same time
     - List total price of orders
