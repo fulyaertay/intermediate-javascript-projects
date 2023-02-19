@@ -165,6 +165,7 @@ gap:0px;
     border: 1px solid #16DB99;
     border-radius: 3px;
     display: none;
+    cursor: pointer;
 }
 
 .card-deatils {
