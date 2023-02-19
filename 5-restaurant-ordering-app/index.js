@@ -1,23 +1,13 @@
-import { menuArray } from "./data.js"
-const orderDetails=document.querySelector(".order-details")
-const listMenu=document.querySelector("#list-orders")
+import { menuArray } from "./data.js";
+const orderDetails = document.querySelector(".order-details");
+const listMenu = document.querySelector("#list-orders");
 
 
-
-function  handleOrderDetails(menuId){
-  
-    orderDetails.classList.add("display")
-
- 
-
-
-}
-
-function renderMenu(){
-    let innerHtml=""
-    let orderDetail=""
-    menuArray.forEach(function(menu){
-        innerHtml=`
+function renderMenu() {
+  let innerHtml = "";
+  let orderDetail = "";
+  menuArray.forEach(function (menu) {
+    innerHtml = `
         <div class="menu">
           <div class="logo">${menu.emoji}</div>
           <div class="order-content">
@@ -31,22 +21,18 @@ function renderMenu(){
 
         
        
-      </div>`
-      listMenu.innerHTML+=innerHtml;
+      </div>`;
+    listMenu.innerHTML += innerHtml;
+  });
 
-   
+  document.addEventListener("click", function (e) {
+    if (e.target.dataset.add) {
+      let orderId = e.target.dataset.add;
+      const menuObject = menuArray.filter(function (menu) {
+        return menu.id == orderId;
+      })[0];
 
-
-    })
-
-    document.addEventListener("click",function(e){
-        if(e.target.dataset.add){
-           let orderId=e.target.dataset.add;
-           const menuObject= menuArray.filter(function(menu){
-            return menu.id == orderId
-        })[0]
-
-        listMenu.innerHTML+=`
+      listMenu.innerHTML += `
         <h4>Your Order</h4>
         <div class="orders">
           <div>${menuObject.name} <span class="remove">remove</span></div>
@@ -59,17 +45,8 @@ function renderMenu(){
         </div>
         <div class="orders">
           <button class="completeBtn">Complete Order</button>
-        </div>`
-
-        
-
-    
-        }
-    })
-
-
-    
-   
-  
+        </div>`;
+    }
+  });
 }
-renderMenu()
+renderMenu();

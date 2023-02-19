@@ -1,116 +1,97 @@
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color:#ccd5ae;
-    font-family: 'Montserrat', sans-serif;
-
-} 
-.listMenu{
-  
-    width:400px;
-    margin: 80 auto;
-    background-color: #f8e8c2;
-    box-shadow:10px 10px #cbd3b2;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ccd5ae;
+  font-family: "Montserrat", sans-serif;
 }
-.header{
-    background-image: url("images/burger.png");
-    background-size:cover;
-    color:rgb(255, 252, 252);
-    width:400px;
-    height: 180px;
-    
+.listMenu {
+  width: 400px;
+  margin: 80 auto;
+  background-color: #f8e8c2;
+  box-shadow: 10px 10px #cbd3b2;
 }
-.content-header{
-    padding: 20px;
-    font-size: 12px;
-    letter-spacing: 2px;
-   
- 
+.header {
+  background-image: url("images/burger.png");
+  background-size: cover;
+  color: rgb(255, 252, 252);
+  width: 400px;
+  height: 180px;
+}
+.content-header {
+  padding: 20px;
+  font-size: 12px;
+  letter-spacing: 2px;
 }
 
-
-.menu{
-    border-bottom:2px solid #b8bea1;
-    padding: 40px;
-    display: flex;
-    justify-content: space-between;
-    height: 40px;
-  
+.menu {
+  border-bottom: 2px solid #b8bea1;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
 }
-.order-content{
-    display: flex;
-    flex-direction: column;
-    margin-right: auto;
-    margin-left: 10px;
-    gap:10px;
-   
-
-
-    
+.order-content {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: 10px;
+  gap: 10px;
 }
 
-.ingredients{
-    font-size: 10px;
-    color: #33352d;
-    letter-spacing: 1px;
-    
+.ingredients {
+  font-size: 10px;
+  color: #33352d;
+  letter-spacing: 1px;
 }
-.price{
-    font-size: 12px;
-    font-weight: 800;
+.price {
+  font-size: 12px;
+  font-weight: 800;
 }
-.food-name{
-    font-weight: 800;
+.food-name {
+  font-weight: 800;
 }
-i{
-    font-size: 25px;
-    color:rgb(53, 30, 14);
-    cursor: pointer;
+i {
+  font-size: 25px;
+  color: rgb(53, 30, 14);
+  cursor: pointer;
 }
-.logo{
-    font-size: 30px;
-}
-
-.order-details{
-
-    text-align: center;
-    padding: 20px;
+.logo {
+  font-size: 30px;
 }
 
-.hidden{
-    display: none;
-}
-.display{
-    display:flex;
+.order-details {
+  text-align: center;
+  padding: 20px;
 }
 
-.orders{
-    
-      
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
-    
-      
-    
+.hidden {
+  display: none;
+}
+.display {
+  display: flex;
 }
 
-.completeBtn{
-    background-color: #1da87a;
-    border: none;
-    padding: 15px;
-    width:500px;
-    color:white;
-    cursor: pointer;
+.orders {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
-h4{
-    text-align: center;
+
+.completeBtn {
+  background-color: #1da87a;
+  border: none;
+  padding: 15px;
+  width: 500px;
+  color: white;
+  cursor: pointer;
 }
-.remove{
-    font-size: 10px;
-    color:#33352d;
-    font-weight: 700;
-    cursor: pointer;
+h4 {
+  text-align: center;
+}
+.remove {
+  font-size: 10px;
+  color: #33352d;
+  font-weight: 700;
+  cursor: pointer;
 }
