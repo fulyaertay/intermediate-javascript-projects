@@ -2,6 +2,8 @@ body {
     margin: 0;
     font-family: 'Smythe', cursive;
     background: #F5F5F5;
+    padding: 0px;
+    box-sizing: border-box;
 } 
 
 .restaurant-container {
@@ -46,16 +48,19 @@ header div {
     width: 508px;
     height: 140px;
     border-bottom: 1px solid #D2D2D2;
-    padding: 52px 0;
+    padding: 50px 0;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+   align-content: flex-start;
 }
 
 .menu-content {
     display: flex;
-    align-items: center;
+gap:0px;
+
+ 
+
 }
 
 .emoji {
@@ -71,6 +76,7 @@ header div {
     font-size: 28px;
     line-height: 17px;
     color: #000000;
+
 }
 
 .ingredients {
