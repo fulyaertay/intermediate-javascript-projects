@@ -1,22 +1,31 @@
 import { menuArray } from './data.js'
-
+import { v4 as uuidv4 } from "https://jspm.dev/uuid";
 const orderBtn = document.getElementById('order-btn')
 const yourOrderTitle = document.getElementById('your-order-title')
 const payBtn = document.getElementById('pay-btn')
-const orderSection=document.getElementsByClassName(".order-section-price")
+const orderSection=document.querySelector(".remove-order")
 let sumOrderPrice = 0
 
 document.addEventListener('click', function(e){
     if(e.target.dataset.add){
         handleAddClick(e.target.dataset.add)
     }else if(e.target.dataset.remove){
-        handleRemove(e.target.dataset.remove)
+        handleRemove(e.target)
 
     }
 })
 function handleRemove(id) {
+    const getRemoveObj= document.getElementsByClassName("order-section-price")
+    for(let remove of getRemoveObj){
+     if(remove.contains(id)){
+        remove.remove()
+     }
+
+    }
+
+
     
-    console.log(id)
+    
   }
 
 orderBtn.addEventListener('click', function(){
@@ -37,9 +46,11 @@ function handleAddClick(addId){
         return add.id == addId
     })[0]
     let total = ''
+
     orderHtml += `
         <div class="order-section-price">
-            <div class="order-name"> ${obj.name} <i class="fa fa-trash remove-order" data-remove=" ${obj.id}"></i></div>
+        
+            <div class="order-name"> ${obj.name} <i class="fa fa-trash remove-order" id="remove-${uuidv4()}" data-remove=" ${obj.id}"></i></div>
             <div class="order-price">$${obj.price} </div>
         </div>
         
