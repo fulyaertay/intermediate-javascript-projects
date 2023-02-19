@@ -8,11 +8,12 @@
   - [2-Shopping List App](#shopping-list)
   - [3-Meme Picker App](#meme-picker)
   - [4-Twitter Clone App](#twitter-clone)
+  - [5-Restaurant Order App](#twitter-clone)
 
 
   ## Overview
 
-  Completed these projects that are parts of [Scrimba](https://scrimba.com/learn/frontend/)'s Essential JavaScript Concepts.  I mastered HTML/CSS and intermediate JavaScript in these projects.
+  Completed these projects that are parts of [Scrimba](https://scrimba.com/learn/frontend/)'s Essential JavaScript Concepts.  I mastered HTML/CSS and intermediate JavaScript functions in these projects.
   You can see the visual representations of the each app below.
 
   ## Projects
@@ -126,6 +127,24 @@
   - class.toggle
   - forEach
   
+  
+   
+  ### 5-Restaurant Order App
+  
+  ### Visulation of the App
+
+
+  ### ![image](./5-restaurant-ordering-app/orders.png)
+  
+  ### Description
+
+  - The project provides to list restaurant menu and order them. Users can able;
+    - Get an order when clicked add button
+    - Added multiple orders same time
+    - List total price of orders
+    - Complete orders by adding card details on a form
+  
+
 
 
 
