@@ -16,12 +16,18 @@ document.addEventListener('click', function(e){
 })
 function handleRemove(id) {
     const getRemoveObj= document.getElementsByClassName("order-section-price")
-    for(let remove of getRemoveObj){
-     if(remove.contains(id)){
-        remove.remove()
-     }
+    if(getRemoveObj.length>0){
+        for(let remove of getRemoveObj){
+            if(remove.contains(id)){
+               remove.remove()
+            }
+       
+           }
+
 
     }
+    
+  
 
 
     
