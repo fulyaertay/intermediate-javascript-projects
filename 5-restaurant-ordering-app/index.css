@@ -1,14 +1,15 @@
 body {
     margin: 0;
     font-family: 'Smythe', cursive;
-    background: #F5F5F5;
+    background: #bbbaba;
     padding: 0px;
     box-sizing: border-box;
 } 
 
 .restaurant-container {
     width: 600px;
-    margin: 0 auto;
+
+    margin: 20 auto;
     background: #FFFFFF;
 }
 
