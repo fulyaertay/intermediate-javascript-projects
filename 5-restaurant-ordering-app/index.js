@@ -11,6 +11,7 @@ document.addEventListener('click', function(e){
         handleAddClick(e.target.dataset.add)
     }else if(e.target.dataset.remove){
         handleRemove(e.target)
+        console.log(e.target.id)
 
     }
 })
@@ -20,9 +21,11 @@ function handleRemove(id) {
         for(let remove of getRemoveObj){
             if(remove.contains(id)){
                remove.remove()
+             
             }
        
            }
+        
 
 
     }
@@ -62,6 +65,7 @@ function handleAddClick(addId){
         
     `
     sumOrderPrice += obj.price
+    getTotal(sumOrderPrice)
     
     if(sumOrderPrice > 0) {
         orderBtn.style.display = 'block'
@@ -114,8 +118,8 @@ function getFeed(){
     return feedHtml
 }
 
-function getTotal(){
-    let price = 0
+function getTotal(price){
+    
     
     
 }
